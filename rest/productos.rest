@@ -1,0 +1,33 @@
+### 1. Listar todos los productos
+GET http://127.0.0.1:3000/productos
+
+### 2. Guardar uno
+POST http://127.0.0.1:3000/productos
+Content-Type: application/json
+
+{
+    
+  "nombre": "Peluche Gigante",
+  "precio": 150,
+  "cantidad": 1,
+  "descripcion": "Peluche Gigante de Oso Cafe",
+  "imagen": "img.jpg",
+  "stock": 10,
+  "categoria": "Juguetes"
+}
+
+
+### 3. Mostrar un producto
+GET http://127.0.0.1:3000/productos/90
+
+### 4. Modificar producto
+PUT http://127.0.0.1:3000/productos/z
+Content-Type: application/json
+
+{
+    "nombre": "Peluche Gigante, Cuadernos, Bolígrafos, Lápices de colores",
+    "precio": 100
+}
+
+### 5. Eliminar un producto
+DELETE http://127.0.0.1:3000/productos/z
